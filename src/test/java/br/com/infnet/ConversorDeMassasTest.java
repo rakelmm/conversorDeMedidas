@@ -6,10 +6,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ConversorDeMassasTests {
+public class ConversorDeMassasTest {
     @Test
     @DisplayName("Deve converter de Quilos para Libras")
-    public void KilosParaLibras(){
+    public void testKilosParaLibras(){
         ConversorDeMassas conversorDeMassas = new ConversorDeMassas();
         double libras = conversorDeMassas.kilosParaLibras(1);
         assertEquals(2.204,libras,0.01);

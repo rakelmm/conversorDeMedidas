@@ -27,7 +27,7 @@ public class ConversorDeTemperaturasTest {
     }
     @Test
     @DisplayName("Deve testar a conversão de K para C")
-    public void testaKelvinParaCelsius(){
+    public void testKelvinParaCelsius(){
         ConversorDeTemperaturas conversorDeTemperaturas = new ConversorDeTemperaturas();
         assertEquals(-273.15,conversorDeTemperaturas.kelvinParaCelsiu(0D));
         assertEquals(592.17,conversorDeTemperaturas.kelvinParaCelsiu(865.32),0.1);
@@ -36,7 +36,7 @@ public class ConversorDeTemperaturasTest {
     }
     @Test
     @DisplayName("Deve testar a conversão de K para F")
-    public void kelvinParaFahrenheith(){
+    public void testKelvinParaFahrenheith(){
         ConversorDeTemperaturas conversorDeTemperaturas = new ConversorDeTemperaturas();
         assertEquals(-459.67,conversorDeTemperaturas.kelvinParaFahrenheith(0.0),0.1);
     }

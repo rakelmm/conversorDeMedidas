@@ -6,10 +6,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ConversorDeVolumeTests {
+public class ConversorDeVolumeTest {
     @Test
     @DisplayName("Deve Converter de litro para GL")
-    public void testaLitroParaGalao(){
+    public void testLitroParaGalao(){
         ConversorDeVolumes conversorDeVolumes = new ConversorDeVolumes();
         double galoes = conversorDeVolumes.litrosParaGaloes(1);
         assertEquals(0.264,galoes, 0.001);
